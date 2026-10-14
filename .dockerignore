@@ -1,0 +1,14 @@
+.git
+.env
+.env.*
+data
+tile-images
+outputs
+work
+tmp
+node_modules
+test
+Respaldo Exportar datos
+backup-*.json
+backups
+scripts

@@ -1,0 +1,34 @@
+/* Ajustes finales para que el cotizador se use cómodamente en PC y celular. */
+.grid-wrap { overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+.grid-wrap > div { margin-inline: auto; }
+@media (min-width: 801px) {
+  .quote-layout > .panel:first-child { min-width: 0; }
+  .grid-wrap { min-height: 570px; }
+}
+@media (max-width: 800px) {
+  .nav { height: 64px; padding-inline: 14px; }
+  .brand img { width: 142px; height: 45px; }
+  .shell { padding-inline: 14px; }
+  .page-head { padding: 28px 0 16px; }
+  .page-head h1 { font-size: 37px; }
+  .quote-layout { gap: 12px; }
+  .panel { padding: 13px; }
+  .toolbar, .canvas-tools { align-items: stretch; }
+  .canvas-tools { flex-wrap: wrap; }
+  .canvas-tools > div { flex-wrap: wrap; }
+  .canvas-tools .tool, .toolbar .tool { min-height: 38px; }
+  .grid-wrap { height: min(54vh, 500px); min-height: 370px; padding: 8px; border: 1px solid #cbd2c9; }
+  .grid-wrap > div { margin-inline: 0; }
+  .stats { position: static; }
+  .stats .stat { font-size: 13px; }
+  .panel .toolbar label { display:flex; align-items:center; gap:4px; }
+  .panel .toolbar .primary { width:100%; }
+}
+@media (max-width: 430px) {
+  .links { gap: 7px; }
+  .links button { font-size: 12px; }
+  .brand img { width: 112px; height: 38px; }
+  .cart-button { padding: 8px 9px !important; }
+  .color-choice { width: 30px; height: 30px; }
+  .grid-wrap { height: 48vh; min-height: 330px; }
+}

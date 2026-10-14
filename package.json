@@ -1,0 +1,13 @@
+{
+  "name": "casplast",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Web y administración CASPLAST",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/check-syntax.js && node --test test/server.test.js"
+  }
+}

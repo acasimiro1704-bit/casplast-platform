@@ -1,0 +1,46 @@
+/* Textos iniciales compartidos por la web, el administrador y el servidor. */
+(()=>{
+const defaults={
+ usesNav:"Dónde usarlos",
+ usesKicker:"ESPACIOS Y POSIBILIDADES",
+ usesTitle:"Un piso, muchos espacios.",
+ usesIntro:"Descubrí ideas para tu próximo proyecto con CASPLAST. El modelo adecuado depende de la base, el tránsito y las condiciones de cada lugar: consultanos antes de elegir.",
+ uses1Title:"Garajes y cocheras",
+ uses1Text:"Dale identidad al lugar donde guardás tu auto o moto. Combiná colores para distinguir el estacionamiento y los sectores de paso.",
+ uses2Title:"Detailing y estética vehicular",
+ uses2Text:"Una propuesta para presentar tu trabajo con una imagen cuidada. Si hay agua, productos de limpieza o equipos, revisemos juntos el modelo y la base.",
+ uses3Title:"Locales y salas de exhibición",
+ uses3Text:"Destacá vehículos, productos o un sector de tu comercio con un diseño que acompañe la identidad de tu marca.",
+ uses4Title:"Stands, ferias y exposiciones",
+ uses4Text:"Creá un espacio de presentación reconocible. Contanos cómo es el lugar, cuánto dura el evento y qué se va a apoyar sobre el piso.",
+ uses5Title:"Talleres y espacios de trabajo",
+ uses5Text:"Organizá visualmente tu espacio. Consultanos por las cargas, herramientas, ruedas y sustancias que habrá en contacto con las baldosas.",
+ uses6Title:"Patios, galerías y terrazas",
+ uses6Text:"También podés evaluar un proyecto al aire libre. Confirmá la aptitud del modelo para exterior y sol, el drenaje y el estado de la base.",
+ usesNoteTitle:"Cada espacio necesita su modelo",
+ usesNote:"Estas ideas son orientativas, no una garantía de aptitud para cualquier uso. Para gimnasios, zonas de pileta, cargas puntuales o maquinaria, pedinos una evaluación específica. No todos los modelos tienen las mismas prestaciones.",
+ usesContact:"Consultar mi espacio",
+ usesCatalog:"Ver modelos",
+ usesInstallation:"Cómo se instalan",
+ attribute1:'+1 tonelada/m²',attribute2:'Fabricación propia',attribute3:'Sin mínimo de compra',attribute4:'Envíos a todo el país',
+ installTitle:'Instalá tu piso, paso a paso.',
+ installIntro:'Una buena base y todas las baldosas orientadas igual: esas son las claves para empezar bien.',
+ installBaseTitle:'Primero, revisá la base',
+ installBaseText:'Podés instalar sobre contrapiso, carpeta o cerámicos, siempre que estén firmes, limpios y lo más parejos posible. Repará pozos profundos y piezas flojas antes de empezar. Las baldosas no nivelan el piso de abajo.',
+ installDrainTitle:'Pensá por dónde sale el agua',
+ installDrainText:'Si el espacio se moja, recomendamos una buena caída hacia el desagüe, sin sectores donde se acumule agua. La pendiente la tiene que tener la base: el piso CASPLAST no la crea ni reemplaza una impermeabilización.',
+ installPatternTitle:'Mantené siempre el mismo patrón',
+ installPatternText:'Ubicá los encastres visibles hacia la derecha y abajo, o hacia la izquierda y abajo, según el modelo y desde dónde empieces. Probá unas piezas primero y mantené esa orientación en todo el piso; no gires baldosas sueltas.',
+ installRightLabel:'Derecha y abajo',installLeftLabel:'Izquierda y abajo',
+ installDiagramCaption:'Esquema orientativo: los bordes destacados representan los encastres. Elegí una orientación y repetila; verificá el modelo antes de armar.',
+ installRowsTitle:'Armá por filas y controlá la línea',
+ installRowsText:'Tomá una referencia recta. Alineá los encastres y uní las piezas sin forzarlas. Revisá el dibujo y la alineación a medida que avanzás. Antes de recortar, consultanos la separación necesaria junto a paredes y obstáculos para tu modelo.',
+ installCutTitle:'Medí, marcá y después recortá',
+ installCutText:'Dejá los cortes de los bordes para el final y conservá el encastre que necesitás unir. Podés usar una caladora con hoja apta para plástico. Si usás amoladora, confirmá la compatibilidad del disco con el plástico y la herramienta; no adaptes discos de sierra dentados. Sujetá la pieza, usá las protecciones indicadas por el fabricante y pedí ayuda si no tenés experiencia.',
+ installSurplusTitle:'Aprovechá los sobrantes',
+ installSurplusText:'Antes de descartar un recorte, fijate si sirve en otro borde y conserva el encastre necesario. No todos se pueden reutilizar. Guardá las baldosas enteras sobrantes para ajustes o reposiciones y separalas por modelo y color.',
+ installNote:'¿Tu piso tiene desniveles o no sabés por dónde empezar? Mandanos una foto y las medidas. Te ayudamos a revisar el caso antes de instalar.'
+};
+if(typeof module!=='undefined'&&module.exports)module.exports=defaults;
+else window.casplastContentDefaults=Object.freeze(defaults);
+})();

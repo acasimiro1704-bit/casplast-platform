@@ -1,0 +1,3 @@
+.budget-preview{display:grid;grid-template-columns:repeat(20,12px);gap:2px;background:#e5e9e2;padding:8px;width:max-content;max-width:100%;overflow:auto}.budget-preview i{width:12px;height:12px}
+.budget-status{padding:7px 9px;border:1px solid #cbd2d9;border-radius:5px;background:#fff;font-weight:600;font:inherit;font-size:12px}.status-pendiente{color:#8b5d00;background:#fff7dd}.status-confirmado{color:#075e8c;background:#e5f4fc}.status-en-producción{color:#633d96;background:#f1eaff}.status-entregado{color:#187241;background:#e4f6eb}
+.budget-filter{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:700}.budget-filter select{padding:8px 10px;border:1px solid #cbd2d9;border-radius:5px;background:#fff;font:inherit}

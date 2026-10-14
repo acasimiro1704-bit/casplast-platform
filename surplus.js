@@ -1,0 +1,7 @@
+state.surplusCells ||= {};
+function surplusCapacity(){const m=model();return Math.floor(500/m.width)*Math.floor(500/m.length)}
+function surplusCount(){return Object.keys(state.surplusCells).length}
+const quoteWithSurplusBase=quote;
+quote=function(){const m=model(),cap=surplusCapacity(),tile=m.width*m.length/10000,n=surplusCount(),cells=Array.from({length:cap},(_,i)=>`<button class="cell ${state.surplusCells[i]?'filled':''}" style="width:18px;height:18px;${state.surplusCells[i]?`background:${col(state.surplusCells[i]).hex}`:''}" data-surplus="${i}"></button>`).join('');let html=quoteWithSurplusBase();const table=`<div class="surplus-panel"><b>Sobrante · área adicional de hasta 5 × 5 m</b><small>Las baldosas marcadas aquí se suman al total y al presupuesto.</small><div class="surplus-grid" id="surplusFloor" style="grid-template-columns:repeat(${Math.floor(500/m.width)},18px)">${cells}</div></div>`;html=html.replace('<div class="design-guide">',table+'<div class="design-guide">');return html.replace('</aside>',`<div class="stat"><span>Sobrante</span><b>${n} baldosas · ${(n*tile).toFixed(2)} m²</b></div></aside>`)};
+const bindBaseWithSurplus=bindGrid;
+bindGrid=function(){bindBaseWithSurplus();const floor=$('#surplusFloor');if(!floor)return;floor.onclick=e=>{const cell=e.target.closest('[data-surplus]');if(!cell)return;const i=cell.dataset.surplus;if(state.tool==='erase')delete state.surplusCells[i];else state.surplusCells[i]=state.color;render()}};

@@ -1,0 +1,17 @@
+node_modules/
+.env
+.env.*
+!.env.example
+data/
+tile-images/
+outputs/
+work/
+tmp/
+coverage/
+*.log
+*.previous
+.DS_Store
+Thumbs.db
+Respaldo Exportar datos/
+backup-*.json
+backups/
